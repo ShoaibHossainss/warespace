@@ -11,11 +11,21 @@ const Header = () => {
             backgroundRepeat: "no-repeat",
             }}
           >
-        <div>
-            <h1>Nice</h1>
-        </div>
-        <div>
-            <h1>Nice</h1>
+        <div className='bg-[#E6F4EB]'>
+            {/* about component */}
+            <div>
+            <h1 className='text-black text-5xl font-semibold'>
+            Small warehouse space
+            <br />
+            for rent in <span className='text-[#00AA6C]'>
+            Upper West
+            <br />
+            Side, Atlanta, GA
+            </span>
+            </h1>
+            </div>
+            {/* form component */}
+            <div></div>
         </div>
         </div>
     );
