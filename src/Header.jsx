@@ -4,6 +4,7 @@ import img2 from '../src/assets/306ffb951b1eda6c359990fd447daff8.jpg'
 import img3 from '../src/assets/562233083093b34d7924e7847e5dd5ae.jpg'
 import img4 from '../src/assets/6642048031a1a0aef4b829d02720f823.jpg'
 
+
 const Header = () => {
     return (
         <div 
@@ -15,9 +16,10 @@ const Header = () => {
             backgroundRepeat: "no-repeat",
             }}
           >
-        <div className='bg-[#E6F4EB] flex gap-10'>
+        <div className='bg-[#E6F4EB] flex gap-10 rounded-[10px] mx-auto'>
             {/* about component */}
-            <div className='ml-9'>
+            <div className='ml-9 mt-12'>
+                
             <h1 className='text-black text-5xl font-semibold'>
             Small warehouse space
             <br />
@@ -105,8 +107,43 @@ const Header = () => {
             </div>
             
             {/* form component */}
-            <div>
-                <h1>Form Here</h1>
+            <div className='mt-8 mr-12 mb-12'>
+                <div className='bg-white rounded-[10px]'>
+                 <h1 className='font-semibold text-3xl text-black  pt-8 mx-8'>Visit for an in-person tour</h1>
+                 <div className='flex mx-8 pt-3'>
+                 <div className="avatar">
+  <div className="w-24 rounded-full">
+    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+  </div>
+</div>
+                <p className='text-[#102442]'>
+                Cashana or Khadijah will answer your
+                 <br /> 
+                 questions and find you a space that meets
+                 <br />
+                 your needs. No commitment necessary!   
+                </p>
+                 </div>
+                  {/* form here */}
+                 <div className='mx-8'>
+                 <form action="">
+                 <div>
+                 <input type="text" placeholder="First name here" className="input input-md text-[#00000066] mt-2" />
+                 <input type="text" placeholder="Last name here" className="input input-md text-[#00000066] mt-2" />
+                 </div>
+                  <div>
+                  <input type="text" placeholder="Email here" className="input input-md text-[#00000066] mt-2" />
+                  <input type="text" placeholder="Phone number (Just so we can remind you of your appt)" className="input input-md text-[#00000066] mt-2" />
+                  </div>
+                 </form>
+                 </div>
+                 <button className='btn mx-8 bg-[#00AA6C] py-2 px-16 text-white font-semibold mt-3 rounded-lg'>Step 2: Find a time that works</button>
+                 <h1 className='mt-3 text-[#102442] mx-8'>Questions? Give us a call: <span className='text-[#00AA6C] underline'>415-985-0940</span></h1>
+                <div className='pb-6'>
+                <h1 className='text-[#102442] mt-9 ml-8 mr-14 rounded-3xl text-center py-1 bg-[#E6F4EB]'>Looking for a job? <span className='underline'>Click here.</span></h1>
+                </div>
+                </div>
+               
             </div>
         </div>
         </div>
