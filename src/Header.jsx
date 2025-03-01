@@ -11,15 +11,12 @@ import rating from '../src/assets/g.png'
 const Header = () => {
     return (
         <div 
-            className="w-full min-h-screen flex flex-col items-center justify-center text-white"
+            className="w-full min-h-screen flex flex-col items-center justify-center text-white bg-cover bg-no-repeat bg-top sm:bg-center"
             style={{
             backgroundImage: `url(${headerImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
             }}
           >
-        <div className='bg-[#E6F4EB] flex gap-10 rounded-[10px] mx-auto'>
+        <div className='bg-[#E6F4EB] md:flex gap-10 my-12 rounded-[10px] mx-auto'>
             {/* about component */}
             <div className='ml-9 mt-12'>
             <div className='flex gap-2 mb-2 py-1 px-2 bg-white w-fit rounded-[8px]'>
@@ -110,7 +107,7 @@ const Header = () => {
                 </div>
             </div>
             {/* image section */}
-            <div className='mt-6 flex gap-2 mb-3'>
+            <div className='mt-6 grid grid-cols-4 gap-2 mb-3'>
              <img className='w-36 rounded-lg' src={img1} alt="" />
              <img className='w-36 rounded-lg' src={img2} alt="" />
              <img className='w-36 rounded-lg' src={img3} alt="" />
@@ -155,7 +152,7 @@ const Header = () => {
                   </div>
                  </form>
                  </div>
-                 <button className='btn mx-8 bg-[#00AA6C] py-2 px-36 text-white font-semibold mt-4 rounded-lg'>Step 2: Find a time that works</button>
+                 <button className='btn mx-8 bg-[#00AA6C] py-2 md:px-36 px-9 text-white font-semibold mt-4 rounded-lg'>Step 2: Find a time that works</button>
                  <h1 className='mt-3 text-[#102442] mx-8'>Questions? Give us a call: <span className='text-[#00AA6C] underline'>415-985-0940</span></h1>
                 <div className='pb-6'>
                 <h1 className='text-[#102442] mt-9 ml-8 mr-14 rounded-3xl text-center py-1 bg-[#E6F4EB] w-fit px-4'>Looking for a job? <span className='underline'>Click here.</span></h1>
