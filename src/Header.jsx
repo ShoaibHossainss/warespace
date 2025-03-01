@@ -3,6 +3,9 @@ import img1 from '../src/assets/296312894289b8da04ee23e6c9b09cbf.jpg'
 import img2 from '../src/assets/306ffb951b1eda6c359990fd447daff8.jpg'
 import img3 from '../src/assets/562233083093b34d7924e7847e5dd5ae.jpg'
 import img4 from '../src/assets/6642048031a1a0aef4b829d02720f823.jpg'
+import avatar1 from '../src/assets/avatar1.png'
+import avatar2 from '../src/assets/avatar2.png'
+import rating from '../src/assets/g.png'
 
 
 const Header = () => {
@@ -19,7 +22,17 @@ const Header = () => {
         <div className='bg-[#E6F4EB] flex gap-10 rounded-[10px] mx-auto'>
             {/* about component */}
             <div className='ml-9 mt-12'>
-                
+            <div className='flex gap-2 mb-2 py-1 px-2 bg-white w-fit rounded-[8px]'>
+            <img className='w-6' src={rating} alt="" />
+            <div className="rating">
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+  <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+</div>
+<h1 className='text-black'>(4.8/5.0)</h1>
+            </div>   
             <h1 className='text-black text-5xl font-semibold'>
             Small warehouse space
             <br />
@@ -107,13 +120,18 @@ const Header = () => {
             </div>
             
             {/* form component */}
-            <div className='mt-8 mr-12 mb-12'>
+            <div className='mt-12 mr-12 mb-12'>
                 <div className='bg-white rounded-[10px]'>
                  <h1 className='font-semibold text-3xl text-black  pt-8 mx-8'>Visit for an in-person tour</h1>
                  <div className='flex mx-8 pt-3'>
                  <div className="avatar">
-  <div className="w-24 rounded-full">
-    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+  <div className="w-20 rounded-full ">
+    <img src={avatar1} />
+  </div>
+</div>
+                 <div className="avatar">
+  <div className="w-20 rounded-full -translate-x-4">
+    <img src={avatar2} />
   </div>
 </div>
                 <p className='text-[#102442]'>
@@ -125,22 +143,22 @@ const Header = () => {
                 </p>
                  </div>
                   {/* form here */}
-                 <div className='mx-8'>
+                 <div className='mx-8 mt-4'>
                  <form action="">
                  <div>
-                 <input type="text" placeholder="First name here" className="input input-md text-[#00000066] mt-2" />
-                 <input type="text" placeholder="Last name here" className="input input-md text-[#00000066] mt-2" />
+                 <input type="text" placeholder="First name here" className="w-full input input-md text-[#00000066] mt-2" />
+                 <input type="text" placeholder="Last name here" className="w-full input input-md text-[#00000066] mt-2" />
                  </div>
                   <div>
-                  <input type="text" placeholder="Email here" className="input input-md text-[#00000066] mt-2" />
-                  <input type="text" placeholder="Phone number (Just so we can remind you of your appt)" className="input input-md text-[#00000066] mt-2" />
+                  <input type="text" placeholder="Email here" className="w-full input input-md text-[#00000066] mt-2" />
+                  <input type="text" placeholder="Phone number (Just so we can remind you of your appt)" className="w-full input input-md text-[#00000066] mt-2" />
                   </div>
                  </form>
                  </div>
-                 <button className='btn mx-8 bg-[#00AA6C] py-2 px-16 text-white font-semibold mt-3 rounded-lg'>Step 2: Find a time that works</button>
+                 <button className='btn mx-8 bg-[#00AA6C] py-2 px-36 text-white font-semibold mt-4 rounded-lg'>Step 2: Find a time that works</button>
                  <h1 className='mt-3 text-[#102442] mx-8'>Questions? Give us a call: <span className='text-[#00AA6C] underline'>415-985-0940</span></h1>
                 <div className='pb-6'>
-                <h1 className='text-[#102442] mt-9 ml-8 mr-14 rounded-3xl text-center py-1 bg-[#E6F4EB]'>Looking for a job? <span className='underline'>Click here.</span></h1>
+                <h1 className='text-[#102442] mt-9 ml-8 mr-14 rounded-3xl text-center py-1 bg-[#E6F4EB] w-fit px-4'>Looking for a job? <span className='underline'>Click here.</span></h1>
                 </div>
                 </div>
                
